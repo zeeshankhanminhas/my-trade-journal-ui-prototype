@@ -1,0 +1,1 @@
+export function ActionChip({label,active}:{label:string;active?:boolean}){return <span className={`px-3 py-1 rounded-full text-xs border ${active?'bg-blue-100 border-blue-300 text-blue-900':'bg-white border-slate-300 text-slate-700'}`}>{label}</span>}

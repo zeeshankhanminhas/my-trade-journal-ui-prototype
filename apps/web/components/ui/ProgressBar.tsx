@@ -1,0 +1,1 @@
+export function ProgressBar({label,value}:{label:string;value:number}){return <div><div className='flex justify-between text-xs mb-1'><span>{label}</span><span>{value}%</span></div><div className='h-2 bg-slate-200 rounded'><div className='h-2 bg-blue-600 rounded' style={{width:`${value}%`}}/></div></div>}

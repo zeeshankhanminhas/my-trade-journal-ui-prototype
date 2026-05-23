@@ -1,0 +1,2 @@
+import { AppShell } from '@/components/layout/AppShell'; import { AlertInboxItem } from '@/components/trading/AlertInboxItem'; import { StatusBanner } from '@/components/ui/StatusBanner'; import { signalInboxItems } from '@/lib/mockData';
+export default function Page(){return <AppShell title='Signal Inbox'><div className='space-y-3'><StatusBanner title='Post-MVP feature' message='TradingView alerts are not part of MVP v0.1.' severity='needs_review'/>{signalInboxItems.map(i=><AlertInboxItem key={i.id} item={i}/>)}</div></AppShell>}

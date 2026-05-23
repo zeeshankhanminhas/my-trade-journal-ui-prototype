@@ -1,0 +1,1 @@
+export function EmptyState({title,message}:{title:string;message:string}){return <div className='border border-dashed rounded-xl p-6 text-center text-slate-600'><p className='font-medium'>{title}</p><p className='text-sm mt-1'>{message}</p></div>}
