@@ -1,0 +1,2 @@
+import { AlertInboxItem as Item } from '@/lib/types'; import { SectionCard } from '../ui/SectionCard'; import { PrimaryButton } from '../ui/PrimaryButton';
+export function AlertInboxItem({item}:{item:Item}){return <SectionCard title={item.asset}><p className='text-xs mb-2'>Post-MVP: TradingView Signal Inbox</p><p className='text-sm'>{item.signalType} • {item.timeReceived} • {item.payloadStatus}</p><div className='mt-2 flex gap-2 flex-wrap'><PrimaryButton disabled>Convert to Setup</PrimaryButton><PrimaryButton disabled>Ignore</PrimaryButton></div></SectionCard>}

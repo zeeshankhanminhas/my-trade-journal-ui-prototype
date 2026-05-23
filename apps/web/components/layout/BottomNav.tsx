@@ -1,0 +1,3 @@
+'use client'; import Link from 'next/link'; import { usePathname } from 'next/navigation'; import { cn } from '@/lib/utils';
+const items=[['/dashboard','Dashboard'],['/setup','Setup'],['/action','Action'],['/decision-review','Review'],['/more','More']] as const;
+export function BottomNav(){const p=usePathname();return <nav className='md:hidden fixed bottom-0 inset-x-0 bg-white border-t border-slate-200'><ul className='grid grid-cols-5'>{items.map(([href,label])=><li key={href}><Link className={cn('block px-2 py-3 text-center text-xs',p===href?'text-blue-700 font-medium':'text-slate-500')} href={href}>{label}</Link></li>)}</ul></nav>}

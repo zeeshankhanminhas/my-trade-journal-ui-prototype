@@ -1,0 +1,1 @@
+export function SectionCard({title,children}:{title?:string;children:React.ReactNode}){return <section className='bg-white border border-slate-200 rounded-xl shadow-sm p-4'>{title&&<h3 className='font-medium mb-3'>{title}</h3>}{children}</section>}

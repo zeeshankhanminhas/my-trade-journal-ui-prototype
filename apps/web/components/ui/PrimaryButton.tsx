@@ -1,0 +1,1 @@
+export function PrimaryButton({children,disabled}:{children:React.ReactNode;disabled?:boolean}){return <button disabled={disabled} className='px-4 py-2 rounded-lg bg-blue-700 text-white disabled:bg-slate-300 disabled:text-slate-600'>{children}</button>}

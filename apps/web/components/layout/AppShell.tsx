@@ -1,0 +1,2 @@
+import { BottomNav } from './BottomNav'; import { SidebarNav } from './SidebarNav'; import { PageHeader } from './PageHeader';
+export function AppShell({children,title,subtitle}:{children:React.ReactNode;title:string;subtitle?:string;status?:string}){return <div><SidebarNav/><div className='md:ml-64 min-h-screen'><div className='p-4 pb-20 md:pb-6 md:p-8 max-w-7xl mx-auto'><PageHeader title={title} subtitle={subtitle}/>{children}</div></div><BottomNav/></div>}

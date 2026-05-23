@@ -1,0 +1,1 @@
+export function LockedStateOverlay(){return <div className='rounded-xl border border-rose-300 bg-rose-50 p-4 text-rose-900'><p className='font-semibold'>Risk Locked</p><p className='text-sm'>Daily loss limit reached. No new trades today. Review only.</p></div>}
