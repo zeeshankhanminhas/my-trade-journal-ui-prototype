@@ -1,0 +1,1 @@
+export function FormField({label,placeholder=''}:{label:string;placeholder?:string}){return <label className='block text-sm'><span className='text-slate-700'>{label}</span><input className='mt-1 w-full border border-slate-300 rounded-lg px-3 py-2' placeholder={placeholder}/></label>}

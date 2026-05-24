@@ -1,0 +1,2 @@
+import { AppShell } from '@/components/layout/AppShell'; import { LockedStateOverlay } from '@/components/ui/LockedStateOverlay'; import { SectionCard } from '@/components/ui/SectionCard'; import { riskData } from '@/lib/mockData';
+export default function Page(){return <AppShell title='Risk'><div className='space-y-3'><LockedStateOverlay/><SectionCard>{Object.entries(riskData).map(([k,v])=><p key={k} className='text-sm'>{k}: {v}</p>)}<p className='mt-2 text-sm'>Allowed in locked state: Review, Notes, Learning.</p></SectionCard></div></AppShell>}
